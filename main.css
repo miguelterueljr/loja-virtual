@@ -79,6 +79,62 @@ body {
   color: rgb(61, 4, 116);
 }
 
-.main__about {
+.products__title {
+  padding-bottom: 18px;
+  border-bottom: 2px solid rgb(61, 4, 116);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: rgb(61, 4, 116);
+  margin-top: 36px;
+}
+
+.products__container {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.products__image {
+  width: 200px; 
   
+}
+
+.products__item {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products__item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.products__item-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: default;
+}
+
+.products__item-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: default;
+}
+
+.products__add-to-charter {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 2px;
+  font-family: "Roboto";
+  font-size: 0.9rem;
 }
